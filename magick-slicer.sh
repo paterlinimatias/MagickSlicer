@@ -903,7 +903,7 @@ setDziFormat(){
     local dziFileName="${resultDir}.dzi"
     resultDir="${resultDir}_files"
     tileH=$tileW
-    echo '<?xml version="1.0"?>' > "$dziFileName"
+    echo "<?xml version=\"1.0\"?>" > "$dziFileName"
     echo "<Image TileSize=\"${tileW}\" Overlap=\"0\" Format=\"${resultExt}\" xmlns=\"http://schemas.microsoft.com/deepzoom/2008\">" >> "$dziFileName"
     echo "<Size Width=\"${imageW}\" Height=\"${imageH}\"/>" >> "$dziFileName"
     echo '</Image>' >> "$dziFileName"
